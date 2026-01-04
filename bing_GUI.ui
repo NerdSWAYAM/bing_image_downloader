@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>671</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(61, 56, 70);
+font: 57 11pt &quot;Ubuntu Sans&quot;;
+color: rgb(255, 255, 255);
+border-color: rgb(61, 56, 70);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="search">
+     <property name="geometry">
+      <rect>
+       <x>132</x>
+       <y>80</y>
+       <width>421</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(246, 245, 244);
+color: rgb(0, 0, 0);
+font: 57 11pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="maxLength">
+      <number>50</number>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Search images...</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>150</y>
+       <width>121</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(246, 245, 244);
+color: rgb(0, 0, 0);
+font: 57 11pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="displayIntegerBase">
+      <number>11</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label1">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>120</y>
+       <width>181</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(246, 245, 244);
+font: 57 14pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Limits</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Directory">
+     <property name="geometry">
+      <rect>
+       <x>372</x>
+       <y>250</y>
+       <width>201</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(246, 245, 244);
+color: rgb(0, 0, 0);
+font: 57 11pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string>dataset</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Save">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>306</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(61, 56, 70);
+border-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Cancel">
+     <property name="geometry">
+      <rect>
+       <x>367</x>
+       <y>306</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(61, 56, 70);
+border-color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox1">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>190</y>
+       <width>161</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(255, 255, 255);
+font: 57 14pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Adult Filter Off</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>230</y>
+       <width>161</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 57 14pt &quot;Ubuntu Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Force Replace</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="title_line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 75 18pt &quot;Liberation Sans&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Bing Image Downloader</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>670</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
